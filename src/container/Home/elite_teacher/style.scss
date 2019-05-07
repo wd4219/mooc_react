@@ -1,0 +1,66 @@
+.home-elite-teacher{
+  background: #fff;
+  padding: 20px 0;
+  margin-top: 10px;
+  &-title{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 16px 10px;
+  }
+  &-course-list{
+    padding: 0 16px;
+  }
+}
+
+.home-elite-teacher-list{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+  &:after{
+    content: '';
+    width: 33.33%;
+    height: calc(100% - 30px);
+    background: rgba(0, 0, 0, 0.1);
+    left: 33.33%;
+    z-index: 2;
+    border-radius: 8px;
+    position: absolute;
+  }
+  &:before{
+    content: '';
+    width: 0; 
+    height: 0;
+    border-width: 15px;
+    border-left-width: 18px;
+    border-right-width: 18px;
+    border-style: solid;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - 30px);
+    border-color:rgba(0, 0, 0, 0.1) transparent transparent transparent;
+  }
+  &-item{
+    flex: 0 0 33.33%;
+    padding: 15px 0 20px;
+    text-align: center;
+    font-size: 0;
+    &-avatar{
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+    }
+    &-name{
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    &-career{
+      font-size: 10px;
+      color: #666;
+    }
+  }
+}

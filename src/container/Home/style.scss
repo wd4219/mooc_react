@@ -1,0 +1,217 @@
+
+.home{
+  background: #f5f5f5;
+}
+
+.home-header{
+  background: #fff;
+  height: 48px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  .iconfont{
+    font-size: 20px;
+  }
+  &__searchbox{
+    height: 32px;
+    background: #eee;
+    flex: 1;
+    border-radius: 20px;
+    margin: 0 15px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    .iconfont{
+      font-size: 14px;
+      margin-right: 5px;
+    }
+  }
+}
+.home-course-list{
+  padding: 20px 16px;
+  background: #fff;
+  margin-top: 10px;
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &__item{
+    margin-top: 20px;
+  }
+  &__more{
+    color: blueviolet;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.home-job{
+  padding: 20px 16px;
+  background: #fff;
+  margin-top: 10px;
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__course{
+    display: flex;
+    flex-wrap: wrap;
+    &-item{
+      flex: 0 0 50%;
+      width: 50%;
+      margin-bottom: 20px;
+      padding-right:15px;
+    }
+  }
+
+  &__course-item-title{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__course-info{
+    display: flex;
+    div{
+      flex: 1;
+      font-size: 12px;
+      p{
+        color: #999;
+        margin: 5px 0;
+      }
+      .tag{
+        height: 20px;
+        line-height: 20px;
+        color: #fff;
+        font-size: 10px;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        background: -webkit-linear-gradient(left,yellow,red);
+      }
+    }
+  }
+  &__course-logo{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.home-new-job{
+  margin-top:10px;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 26px 20px 16px;
+  &__title{
+    font-weight: bold;
+  }
+  img{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.home-column{
+  padding: 20px 0;
+  margin-top:10px;
+  background: #fff;
+  &-title{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 16px;
+    margin-bottom: 10px;
+  }
+  &-more{
+    color: blueviolet;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &-item{
+    width: 320px;
+    display: flex;
+    img{
+      width: 84px;
+      height: 122px;
+      border-radius: 4px;
+      margin-right: 15px;
+    }
+    &-info{
+      padding-top: 10px;
+      flex:1;
+      overflow: hidden;
+    }
+    &-title{
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &-info-solgan{
+      font-size: 14px;
+      color: #333;
+      margin:5px 0;
+    }
+    .author{
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      background: #eee;
+      display: inline-block;
+      padding: 0 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-bottom: 8px;
+    }
+    .info-bar{
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .tag{
+      color: blueviolet;
+      height: 18px;
+      line-height: 18px;
+      border-radius: 9px;
+      padding: 0 10px;
+      display: inline-block;
+      background: rgba(138, 43 , 226, 0.1);
+    }
+    .discount{
+      font-size: 14px;
+      font-weight: bold;
+      color: blueviolet;
+      margin: 0 5px;
+    }
+    .origin-price{
+      text-decoration: line-through;
+    }
+    .sub-num{
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.home-attention{
+  background: #fff;
+  margin-top: 10px;
+  padding: 20px 16px;
+  &-title{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &-change{
+    font-size: 14px;
+    float: right;
+    color: blueviolet;
+  }
+}
