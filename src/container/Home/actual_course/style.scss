@@ -1,0 +1,13 @@
+.actual-course-category-item {
+  color: #666;
+  background: #eee;
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-align: center;
+  &-number{
+    color: #bbb;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+}

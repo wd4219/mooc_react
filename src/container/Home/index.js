@@ -4,6 +4,7 @@ import Marquee from '../../components/marquee/Marquee.js';
 import CourseItem from '../../components/course_item';
 import Slider from '../../components/slider';
 import EliteTeacher from './elite_teacher';
+import Swiper from '../../components/swiper';
 
 export default class Home extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class Home extends Component {
         <header className="home-header">
           <div className="home-header__shopingcart iconfont icon-shopingcart"></div>
           <div className="home-header__searchbox">
-            <Marquee>
+            <Marquee duration={5000}>
               <p><i className="iconfont icon-search"></i>算法 · 面试 · 数据结构</p>
               <p><i className="iconfont icon-search"></i>vuejs · python · 人工智能</p>
               <p><i className="iconfont icon-search"></i>人工智能 · Go语言 · 小程序</p>
@@ -21,6 +22,23 @@ export default class Home extends Component {
           </div>
           <div className="home-header__download iconfont icon-download"></div>
         </header>
+        {/* 轮播图模块 */}
+        <div className="home-index-swiper" style={{height: 120,background:'#fff',padding:'10px 0'}}>
+          <Swiper>
+            <img src="//img.mukewang.com/5cd12eb509504e1909000300.jpg" alt="轮播图"  style={{borderRadius:4}}/>
+            <img src="//img1.mukewang.com/szimg/5ccf9b0b09637afa00000000.jpg" alt="轮播图" style={{borderRadius:4}}/>
+            <img src="//img4.mukewang.com/szimg/5cbfc29e09b196eb09000300.jpg" alt="轮播图" style={{borderRadius:4}}/>
+            <img src="//img2.mukewang.com/szimg/5cb698b409ccec3a18000600.jpg " alt="轮播图" style={{borderRadius:4}}/>
+          </Swiper>
+        </div>
+        {/* 通知模块 */}
+        <div className="home-notice">
+          <i className="iconfont icon-notice"></i>
+          <Marquee>
+            <p>注册送价值68元接人礼券&gt;</p>
+            <p>算法大神bobo老师专栏上架了&gt;</p>
+          </Marquee>
+        </div>
         {/* 实战模块 */}
         <div className="home-course-list">
           <h2 className="home-course-list__title">实战推荐</h2>

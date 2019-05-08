@@ -1,0 +1,42 @@
+.job-course-item{
+  background: #fff;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  &:last-child{
+    margin-bottom:0;
+  }
+  &-title{
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    &:after{
+      content: '';
+      height: 2px; 
+      width: 100%;
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      opacity: 0.5;
+      background: blueviolet;
+    }
+  }
+  &-info{
+    font-size: 12px;
+    display: flex;
+    color: #666;
+    flex: 1;
+  }
+  &-detail-abstract{
+    margin: 8px 15px 0 0;
+  }
+  &-logo{
+    height: 80px;
+    width: 80px;
+  }
+}

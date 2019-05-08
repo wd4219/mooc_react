@@ -1,0 +1,43 @@
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  position:relative;
+  .swiper-list-content{
+    position:absolute;
+    display:flex;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .swiper-list-item{
+    height: 100%;
+    position:absolute;
+    box-sizing:border-box;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  .dots {
+    height: 6px;
+    position:absolute;
+    bottom: 6px;
+    font-size: 0;
+    padding: 0 20px;
+    text-align:center;
+    width:100%;
+    .dot{
+      height: 6px;
+      width: 6px;
+      border-radius: 3px;
+      background: #fff;
+      display:inline-block;
+      margin: 0 5px;
+      transition: width 0.2s linear;
+    }
+    .active{
+      background:red;
+      width: 12px;
+    }
+  }
+}

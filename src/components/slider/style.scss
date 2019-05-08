@@ -1,9 +1,15 @@
+:root{
+  --scrollBarColor: red;
+  --scrollBarBackground: #efefef;
+  --scrollBarButtonWidth: '16px'
+}
+
 .slider-list-content{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  &::-webkit-scrollbar{
-    display:none;
+  &::-webkit-scrollbar{ 
+    display: none;
   }
   .slider-list-item{
     flex: 0 0 auto;
@@ -11,3 +17,24 @@
     overflow:hidden;
   }
 }
+.show-scrollbar{
+  &::-webkit-scrollbar-thumb{
+    background-color: var(--scrollBarColor); 
+  }
+  &::-webkit-scrollbar-thumb:hover{ 
+    background-color: var(--scrollBarColor);
+  } 
+  &::-webkit-scrollbar-track{ 
+    background-color: var(--scrollBarBackground); 
+  }
+  &::-webkit-scrollbar{ 
+    height: 2px;
+    display: block!important;
+  }
+  &::-webkit-scrollbar-button{ 
+    width: var(--scrollBarButtonWidth);
+    border-radius: 0px;
+    background-color: #fff; 
+  } 
+}
+

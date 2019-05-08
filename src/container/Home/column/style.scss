@@ -1,0 +1,70 @@
+.column-item{
+  width: calc(100% - 32px);
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 auto;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+  &-top{
+    padding: 10px  16px;
+    background: url('//img2.mukewang.com/5cd103760001f0eb10290432.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  &-info{
+    width: 70%;
+    &-author{
+      font-size: 12px;
+      margin: 8px 0;
+    }
+    &-detail{
+      font-size: smaller;
+      padding: 0px 8px;
+      height: 18px;
+      line-height: 18px;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      border-top-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+    }
+  }
+  &-origin-price{
+    display: inline;
+    text-decoration: line-through;
+  }
+  &-title{
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  &-bottom{
+    height: 40px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 12px;
+    &-slogan{
+      flex: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-right: 30px;
+    }
+  }
+  &-read{
+    color: #999;
+    height: 28px;
+    padding: 0 12px;
+    line-height: 28px;
+    border-radius: 14px;
+    background: #eee;
+    span{
+      font-weight: bold;
+      color: blueviolet;
+      font-size: 14px;
+    }
+  }
+}
