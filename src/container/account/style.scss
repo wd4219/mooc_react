@@ -1,0 +1,66 @@
+.account-userinfo-container{
+  padding: 10px 0;
+  background: #fff;
+}
+.account-userinfo-top{
+  display: flex;
+  padding: 0 16px;
+  img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .account-userinfo-username{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  p{
+    font-size: 12px;
+    color: #999;
+    margin-top:8px;
+    span{
+      color: #333;
+      margin-right:20px;
+    }
+  }
+}
+
+.account-userinfo-bottom{
+  display: flex;
+  font-size: 14px;
+  margin-top: 15px;
+  div{
+    flex: 1;
+    text-align: center;
+    color: #999;
+    border-right: 1px solid #d7d7d7;
+    &:last-child{
+      border-right: none;
+    }
+  } 
+  span{
+    margin-left:5px;
+    color: #333;
+  }
+}
+
+
+.account-operate-item{
+  background: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d7d7d7;
+  justify-content: space-between;
+  padding-right: 16px;
+  &-title{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .iconfont{
+    transform: rotate(-90deg);
+    margin-left: 10px;
+  }
+}
