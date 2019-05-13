@@ -3,7 +3,7 @@ import './style.scss';
 export default class Note extends Component {
   render() {
     return (
-      <div>
+      <div className="note">
         <div className="note-list" >
           <NoteItem></NoteItem>
           <NoteItem></NoteItem>

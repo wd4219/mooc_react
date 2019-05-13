@@ -6,7 +6,8 @@ export default class CourseItem extends Component {
 
   static propTypes = {
     data: PropTypes.object.isRequired,
-    margin: PropTypes.string.isRequired
+    margin: PropTypes.string.isRequired,
+    handerClick: PropTypes.func
   }
 
   static defaultProps = {
@@ -16,7 +17,7 @@ export default class CourseItem extends Component {
 
   render() {
     return (
-      <div className="course-item" style={{marginBottom: this.props.margin}}>
+      <div className="course-item" style={{marginBottom: this.props.margin}} onClick={this.props.handerClick}>
         <img className="course-item__logo" alt="课程图片" src="https://img2.mukewang.com/szimg/5cbf00c608f52a3b06000338.jpg"></img>
         <div className="course-item__info">
           <h3 className="course-item__title">前端下一代开发语言TypeScript 从基础到axios实战</h3>

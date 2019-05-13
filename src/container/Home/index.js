@@ -5,8 +5,12 @@ import CourseItem from '../../components/course_item';
 import Slider from '../../components/slider';
 import EliteTeacher from './elite_teacher';
 import Swiper from '../../components/swiper';
+export default  class Home extends Component {
 
-export default class Home extends Component {
+  _goCourseDetail() {
+    this.props.history.push('/course/detail');
+  }
+
   render() {
     return (
       <div className="home">
@@ -42,7 +46,7 @@ export default class Home extends Component {
         {/* 实战模块 */}
         <div className="home-course-list">
           <h2 className="home-course-list__title">实战推荐</h2>
-          <CourseItem></CourseItem>
+          <CourseItem handerClick={this._goCourseDetail.bind(this)}></CourseItem>
           <CourseItem></CourseItem>
           <CourseItem></CourseItem>
           <CourseItem></CourseItem>
@@ -195,6 +199,8 @@ export default class Home extends Component {
           <h2 className="home-attention-title">我的关注<span className="home-attention-change">调整我的关注方向&gt;&gt;</span></h2>
         </div>
       </div>
+
+      
     )
   }
 }
